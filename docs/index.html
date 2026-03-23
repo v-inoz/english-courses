@@ -11,7 +11,7 @@
         <title>Braga English Club | English with a Native Speaker in Portugal</title>
 
         <!-- Favicon-->
-        <script type="text/javascript" nonce="32f5c458d02341468e17802cf08" src="//local.adguard.org?ts=1774217093906&amp;type=content-script&amp;dmn=chatgpt.com&amp;url=https%3A%2F%2Fchatgpt.com%2Fbackend-api%2Festuary%2Fcontent%3Fid%3Dfile_00000000dc807243a26b19016fdb8e34%26ts%3D492842%26p%3Dfs%26cid%3D1%26sig%3D8f7dad0a6076bcb3fd815492dddb1a4cbe786dc9b8e491eabb385978b25e7895%26v%3D0&amp;app=opera.exe&amp;css=3&amp;js=1&amp;rel=1&amp;rji=1&amp;sbe=1&amp;stealth=1&amp;st-dnt"></script><script type="text/javascript" nonce="32f5c458d02341468e17802cf08" src="//local.adguard.org?ts=1774217093906&amp;name=AdGuard%20Extra&amp;name=AdGuard%20Popup%20Blocker&amp;type=user-script"></script><script type="text/javascript" nonce="32f5c458d02341468e17802cf08" src="//local.adguard.org?ts=1774217093906&amp;type=content-script&amp;dmn=chatgpt.com&amp;url=https%3A%2F%2Fchatgpt.com%2Fbackend-api%2Festuary%2Fcontent%3Fid%3Dfile_000000003080720aafd715ccb37ce68e%26ts%3D492841%26p%3Dfs%26cid%3D1%26sig%3D34ea145fdbea6f061e3bb9c18e04cc1cb67a14f32e615cb9afc689b714d0832b%26v%3D0&amp;app=opera.exe&amp;css=3&amp;js=1&amp;rel=1&amp;rji=1&amp;sbe=1&amp;stealth=1&amp;st-dnt"></script><script type="text/javascript" nonce="32f5c458d02341468e17802cf08" src="//local.adguard.org?ts=1774217093906&amp;name=AdGuard%20Extra&amp;name=AdGuard%20Popup%20Blocker&amp;type=user-script"></script><link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <script type="text/javascript" nonce="32f5c458d02341468e17802cf08" src="//local.adguard.org?ts=1774217093906&amp;type=content-script&amp;dmn=chatgpt.com&amp;url=https%3A%2F%2Fchatgpt.com%2Fbackend-api%2Festuary%2Fcontent%3Fid%3Dfile_0000000038087246bacdda4170a4b04e%26ts%3D492843%26p%3Dfs%26cid%3D1%26sig%3D09daeaffd3a8044c8cbf914d04af051097954af73d85fefc3caa5e9a32057b7c%26v%3D0&amp;app=opera.exe&amp;css=3&amp;js=1&amp;rel=1&amp;rji=1&amp;sbe=1&amp;stealth=1&amp;st-dnt"></script><script type="text/javascript" nonce="32f5c458d02341468e17802cf08" src="//local.adguard.org?ts=1774217093906&amp;name=AdGuard%20Extra&amp;name=AdGuard%20Popup%20Blocker&amp;type=user-script"></script><script type="text/javascript" nonce="32f5c458d02341468e17802cf08" src="//local.adguard.org?ts=1774217093906&amp;type=content-script&amp;dmn=chatgpt.com&amp;url=https%3A%2F%2Fchatgpt.com%2Fbackend-api%2Festuary%2Fcontent%3Fid%3Dfile_000000003080720aafd715ccb37ce68e%26ts%3D492841%26p%3Dfs%26cid%3D1%26sig%3D34ea145fdbea6f061e3bb9c18e04cc1cb67a14f32e615cb9afc689b714d0832b%26v%3D0&amp;app=opera.exe&amp;css=3&amp;js=1&amp;rel=1&amp;rji=1&amp;sbe=1&amp;stealth=1&amp;st-dnt"></script><script type="text/javascript" nonce="32f5c458d02341468e17802cf08" src="//local.adguard.org?ts=1774217093906&amp;name=AdGuard%20Extra&amp;name=AdGuard%20Popup%20Blocker&amp;type=user-script"></script><link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
 
         <!-- Bootstrap Icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
@@ -83,8 +83,15 @@
             }
 
             .service-card .price-value {
-                font-size: 2.1rem;
+                display: inline-block;
+                font-size: 1.35rem;
                 line-height: 1.2;
+                white-space: nowrap;
+                padding: 0.55rem 1rem;
+                border: 1px solid rgba(0, 0, 0, 0.12);
+                border-radius: 0.75rem;
+                background: #f8f9fa;
+                margin-top: 0.25rem;
             }
 
             #trialModal .modal-content {
@@ -192,7 +199,17 @@
                 margin-bottom: 1rem;
             }
 
-        </style>
+        
+.coach-cta {
+    margin-left: 60px;
+}
+@media (max-width: 992px) {
+    .coach-cta {
+        margin-left: 0;
+    }
+}
+
+</style>
     </head>
 
     <body id="page-top">
@@ -310,10 +327,10 @@
                         <div class="row gx-4 gx-lg-5 justify-content-center">
                             <div class="col-lg-3 col-md-6 mb-4">
                                 <div class="card h-100 shadow-sm service-card">
-                                    <div class="card-body text-center">
+                                    <div class="card-body text-center d-flex flex-column align-items-center">
                                         <div class="mb-2"><i class="bi-clock fs-1 text-primary"></i></div>
                                         <h3 class="h2 mb-2">Free trial</h3>
-                                        <p class="text-muted mb-3">20 minutes</p>
+                                        <p class="text-muted mb-3">A 20-minute introductory session to meet your coach, assess your current level, and discuss your goals.</p>
                                         <div class="price-value mb-0">Free</div>
                                     </div>
                                 </div>
@@ -321,33 +338,33 @@
 
                             <div class="col-lg-3 col-md-6 mb-4">
                                 <div class="card h-100 shadow-sm service-card">
-                                    <div class="card-body text-center">
+                                    <div class="card-body text-center d-flex flex-column align-items-center">
                                         <div class="mb-2"><i class="bi-person fs-1 text-primary"></i></div>
                                         <h3 class="h2 mb-2">Individual (1:1)</h3>
                                         <p class="text-muted mb-3">Tailored one-to-one lessons designed around your goals</p>
-                                        <div class="price-value mb-0">from €30 / hour</div>
+                                        <div class="price-value mb-0">from €30/hour</div>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="col-lg-3 col-md-6 mb-4">
                                 <div class="card h-100 shadow-sm service-card">
-                                    <div class="card-body text-center">
+                                    <div class="card-body text-center d-flex flex-column align-items-center">
                                         <div class="mb-2"><i class="bi-people fs-1 text-primary"></i></div>
                                         <h3 class="h2 mb-2">Paired lesson</h3>
                                         <p class="text-muted mb-3">A relaxed and effective format for learning together as a duo</p>
-                                        <div class="price-value mb-0">from €40 / hour</div>
+                                        <div class="price-value mb-0">from €40/hour</div>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="col-lg-3 col-md-6 mb-4">
                                 <div class="card h-100 shadow-sm service-card">
-                                    <div class="card-body text-center">
+                                    <div class="card-body text-center d-flex flex-column align-items-center">
                                         <div class="mb-2"><i class="bi-briefcase fs-1 text-primary"></i></div>
                                         <h3 class="h2 mb-2">Business English</h3>
                                         <p class="text-muted mb-3">For professionals aiming for polished, high-level communication</p>
-                                        <div class="price-value mb-0">from €35 / hour</div>
+                                        <div class="price-value mb-0">from €45/hour</div>
                                     </div>
                                 </div>
                             </div>
@@ -392,7 +409,7 @@
                         </ul>
 
                         <div class="d-flex flex-column flex-sm-row gap-3 mt-5">
-                            <a class="btn btn-primary" href="#" data-bs-toggle="modal" data-bs-target="#trialModal">Book a trial</a>
+                            <a class="btn btn-primary btn-xl coach-cta" href="#" data-bs-toggle="modal" data-bs-target="#trialModal">Book a trial</a>
                         </div>
                     </div>
                 </div>
